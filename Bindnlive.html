@@ -1,0 +1,22 @@
+
+
+
+<style>  
+    p{border:1px solid Black;}  
+</style>  
+<p>This is a p tag</p>  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript"></script>   
+<script>  
+    $("p").bind("click", function () { alert("P tag is clicked from bind function.") });  
+    $("p").live("click", function () { alert("P tag is clicked from live function.") });  
+   
+</script>  
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript"></script>
+
+
+<!-- Difference between Bind and live 
+ .bind() will only apply to the items you currently have selected in your jQuery object. .live() will apply to all current matching elements, 
+
+
+-->

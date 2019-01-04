@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>jQuery Core & Internals</title>
+	
+
+
+  <!-- Our jQuery to hold and release ready event-->
+  <script type="text/javascript">
+    $.holdReady(true);
+    alert('jQuery ready event being released);
+    $.holdReady(false);
+    $(function(){ // jQuery(document).ready(function(){
+      // Other jQuery stuff for after ready()
+    });
+  </script>
+      <!-- This is where we import the minified jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    
+</head>
+<body>
+</body>
+</html>

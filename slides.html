@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>j query</title>
+</head>
+<body>
+
+<p>first paragraph</p>
+<p>secound paragraph</p>
+<button id="slideDown">clickme</button>
+<button id="slideUp">clickme</button>
+<button id="slidetoggle">clickme</button>
+</body>
+    <script src="js/jquery-3.2.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#slideDown").click(function(){
+			$("p").slideDown('slow');			
+		});
+
+		$("#slideUp").click(function(){
+			$("p").slideUp('slow');			
+});
+$("#slidetoggle").click(function(){
+			$("p").slideToggle('slow');			
+
+});
+	});
+</script>
+</html>

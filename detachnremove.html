@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+
+<div id="divElement" style="padding:10px; background-color:yellow; border:1px solid #000000; width:300px; height:150px;">
+ 
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+ 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ 
+</div><br/>
+ 
+<button class="btn-remove">remove()</button>
+
+ 
+<button class="btn-detach">detach()</button>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ 
+                $("button.btn-remove").click(function(){
+ 
+                                $("#divElement").remove();
+ 
+                });
+ 
+                                       
+ 
+                $("button.btn-detach").click(function(){
+ 
+                                $("#divElement").detach();
+ 
+                });          
+ 
+});
+</script>
+</html>
+
+
+<!-- Explanation
+
+	Explanation: In the above example there are SPAN element and some content inside the DIV element. See there are three buttons remove(), empty(), detach().
+
+When you click on “remove()” button it will remove the yellow box with all content and elements inside the yellow box.
+
+
+When you click on “detach()” button it will remove all content and child elements inside the yellow box and yellow box too but it keeps all data and event handlers of the removed elements which we can reuse it at a later time.
+
+-->
